@@ -1,7 +1,8 @@
+function progress() {
 $(document).ready(function () {
 
-        var countDownDate = new Date("Jan 16, 2022 00:00:00").getTime();
-        var startDate = new Date("Jan 15, 2022, 23:00:00").getTime();
+        var countDownDate = new Date("Jan 16, 2022 01:00:00").getTime();
+        var startDate = new Date("Jan 16, 2022, 00:20:00").getTime();
 // Update the count down every 1 second
 // Get todays date and time
         var now = new Date().getTime();
@@ -16,3 +17,10 @@ $(document).ready(function () {
         var progress = Math.floor(((minutesTotal - minutesLeft) / minutesTotal) * 100);
         $('#progressbar').attr('aria-valuenow', progress).css('width', progress + "%").html(progress + "% Complete");
     });
+}
+
+progress()
+
+window.onload = function() {
+    setInterval(progress, 6000);
+}

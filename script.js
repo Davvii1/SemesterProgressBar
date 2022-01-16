@@ -1,8 +1,8 @@
 function progress() {
 $(document).ready(function () {
 
-        var countDownDate = new Date("Jan 16, 2022 02:00:00").getTime();
-        var startDate = new Date("Jan 16, 2022, 01:00:00").getTime();
+        var countDownDate = new Date("Jun 17, 2022 00:00:00").getTime();
+        var startDate = new Date("Jan 17, 2022, 00:00:00").getTime();
 // Update the count down every 1 second
 // Get todays date and time
         var now = new Date().getTime();
